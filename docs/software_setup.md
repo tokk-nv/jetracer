@@ -1,18 +1,33 @@
 # Software Setup
 
+> If you have built a 3rd-pary Jetracer kit (other than our DIY vehicles based on Latrax Rally or Tamiya TT-02), the following method (and the SD card images) may not work. <br> **Please check the manufacture's instruction on its kit's specific software setup.**
+
 After finishing these steps, you'll be all set to program JetRacer.  Once you're finished, run through the [examples](examples.md).
 
 ## Step 1 - Flash micro SD card
 
-1. Download the JetCard SD card image [jetcard_v0p0p0.img](https://drive.google.com/open?id=1wXD1CwtxiH5Mz4uSmIZ76fd78zDQltW_) onto a Windows, Linux or Mac *desktop machine*
-    
-    > You can check it against this [md5sum](https://drive.google.com/open?id=1356ZBrYUWaTgbV50UMB1uCfWrNcd6PEF)
-
+1. Download a JetCard SD card image listed in below table onto a Windows, Linux or Mac *desktop machine*
 2. Insert a 32GB+ SD card into the desktop machine
-3. Using [Etcher](https://www.balena.io/etcher/) select ``jetcard_v0p0p0.img`` and flash it onto the SD card
+3. Using [Etcher](https://www.balena.io/etcher/) select the downloaded zip file and flash it onto the SD card
 4. Remove the SD card from the desktop machine
 
+### Latest Release (** **but not yet fully verified** ** )
+
 > Please note, the password for the pre-built SD card is ``jetson``
+
+| Platform | Board revision | JetPack Version | Download | MD5 Checksum | branch |
+| -------- | -------------- | --------------- | -------- |------------- | ------ |
+| Jetson Nano (4GB) | `A02` and `B01` | 4.5.1 |  [jetcard_nano-4gb-jp451.zip](https://drive.google.com/file/d/1MX-z7ZCPvUzpN3nGhfZMAgENtK6VnBdh) | 1004e73e034d6df3b5167705546a11f3 | [`jetpack_4.5.1`](https://github.com/NVIDIA-AI-IOT/jetcard/tree/jetpack_4.5.1)
+
+### Old Release
+
+> Please note that this image is only for the older `A02` revision of Jetson Nano board, which has only one camera (CSI) connector onboard.
+
+| Platform | Board revision | JetPack Version | Download | MD5 Checksum | branch |
+| -------- | -------------- | --------------- | -------- |------------- | ------ |
+| Jetson Nano (4GB) | `A02` | 4.2|  [jetcard_v0p0p0.zip](https://drive.google.com/open?id=1wXD1CwtxiH5Mz4uSmIZ76fd78zDQltW_) | f7b635a651e4a2228e3812360cce74e3 | [`jetpack_4.2`](https://github.com/NVIDIA-AI-IOT/jetcard/tree/jetpack_4.2)
+
+
 
 ## Step 2 - Power on and connect over USB
 
